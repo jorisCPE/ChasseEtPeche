@@ -1,0 +1,20 @@
+A faire :
+
+- Générer une nouvelle carte quand le nombre de ressources est inférieur à 10
+- Faire un choix de 12 tuiles sur les 15 disponibles
+
+En cours :
+
+- Application Tkinter regroupant plusieurs fonctionnalités
+
+Déjà fait :
+
+- Affichage graphique d'une tuile
+- Affichage graphique de la carte entière
+- Génération de ressources aléatoires sur chaque tuile respectant une probabilité d'apparition (+ bonus de proximité / - type de case et nombre de ressources identiques)
+- Gestion par case des ressources à 2 cases de proximité
+- Disposition aléatoire des tuiles sur la carte
+- Rotation aléatoire de chaque tuile sur la carte
+- Changer les couleur et les formes des ressource ( trouvé comment faire une étoile )
+- Affichage du nom des tuiles dans l'ordre de disposition plus sauvegarde de la map sur le PC
+- récapitulatif du nombre de ressources qui sont apparues  

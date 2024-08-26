@@ -1,0 +1,42 @@
+Ressources :
+
+Baleine : rond olivedrab
+Betail : rond yellowgreen
+Charbon : carré black
+Chevaux : rond peru
+Crabe: rond aquamarine
+Fer : carré red
+Gemme : carré royal blue
+Geyser : rond red
+Or : carré gold
+Ruine : etoile black
+Soie : rond violet
+Village : etoile red
+Merveille : etoile gold
+Cite libre : etoile snow
+
+
+
+terrain : 
+
+0 Rien 
+1 Plaine : vert claire 
+2 Foret : vert foncé
+3 Desert : jaune
+4 Montagne : gris
+5 Marais : marron
+6 Mer : bleu
+7 Volcan : Rouge
+
+
+format tuile :
+
+tuile = [[0,0,x,x,x,x,0],
+         [0,x,x,x,x,x,0],
+         [0,x,x,x,x,x,x],
+         [x,x,x,x,x,x,x],
+         [0,x,x,x,x,x,x],
+         [0,x,x,x,x,x,0],
+         [0,0,x,x,x,x,0]]
+
+
