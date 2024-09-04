@@ -93,8 +93,7 @@ def affichage_carte(liste_tuile, save_path=None):
         type_case = tuile[idy][idx]
         
         # liste ressources terrestre 
-        liste_ressources = ["baleine","betail","charbon","chevaux","crabe","fer","gemme","geyser","or","ruines","soie","village","merveille","cite_libre","vide"]
-  
+        liste_ressources = ["baleine","betail","charbon","crabe","fer","geyser","or","ruines","soie","village","merveille","cite_libre","vide"]
         ressources = ""
         couleur = ""
         forme = ""
@@ -105,155 +104,182 @@ def affichage_carte(liste_tuile, save_path=None):
         ##print(ressources_proximite)
         
         #gestion du bonus de proximité
-        bonus_proximites_1=70
-        bonus_proximites_2=30
-        val_max_ressources = [8,119,216,316,419,516,609,712,819,910,1014,1119,1210,1310]
+        bonus_proximites_1=40
+        bonus_proximites_2=10
+        val_max_ressources = [25,160,250,330,460,560,660,715,830,950,1020,1130]
         
         for val in ressources_proximite_1:
             if val[0] == "baleine":
-                val_max_ressources[0] += bonus_proximites_1
+                if ressources_generees.count("baleine") > 2:
+                    val_max_ressources[0] = 0
+                else:
+                    val_max_ressources[0] += 0
             elif val[0] == "betail":
-                val_max_ressources[1] += bonus_proximites_1
+                if ressources_generees.count("betail") > 2:
+                    val_max_ressources[1] = 0
+                else:
+                    val_max_ressources[1] += bonus_proximites_1
             elif val[0] == "charbon":
-                val_max_ressources[2] += bonus_proximites_1
-            elif val[0] == "chevaux":
-                val_max_ressources[3] += bonus_proximites_1
+                if ressources_generees.count("charbon") > 2:
+                    val_max_ressources[2] = 0
+                else:
+                    val_max_ressources[2] += bonus_proximites_1
             elif val[0] == "crabe":
-                val_max_ressources[4] += bonus_proximites_1
+                if ressources_generees.count("crabe") > 2:
+                    val_max_ressources[3] = 0
+                else:
+                    val_max_ressources[3] += bonus_proximites_1
             elif val[0] == "fer":
-                val_max_ressources[5] += bonus_proximites_1
-            elif val[0] == "gemme":
-                val_max_ressources[6] += bonus_proximites_1
+                if ressources_generees.count("fer") > 2:
+                    val_max_ressources[4] = 0
+                else:
+                    val_max_ressources[4] += bonus_proximites_1
             elif val[0] == "geyser":
-                val_max_ressources[7] += bonus_proximites_1
+                if ressources_generees.count("geyser") > 2:
+                    val_max_ressources[5] = 0
+                else:
+                    val_max_ressources[5] += 0
             elif val[0] == "or":
-                val_max_ressources[8] += bonus_proximites_1
+                if ressources_generees.count("or") > 2:
+                    val_max_ressources[6] = 0
+                else:
+                    val_max_ressources[6] += bonus_proximites_1
             elif val[0] == "ruines" or ressources_generees.count("ruines") > 2:
-                val_max_ressources[9] += 0
+                val_max_ressources[7] += 0
             elif val[0] == "soie":
-                val_max_ressources[10] += bonus_proximites_1
+                if ressources_generees.count("soie") > 2:
+                    val_max_ressources[8] = 0
+                else:
+                    val_max_ressources[8] += bonus_proximites_1
             elif val[0] == "village" or ressources_generees.count("village") > 2:
+                val_max_ressources[9] = 0
+            elif val[0] == "merveille" or ressources_generees.count("merveille") > 1:
+                val_max_ressources[10] = 0
+            elif val[0] == "cite_libre" or ressources_generees.count("cite_libre") > 1:
                 val_max_ressources[11] = 0
-            elif val[0] == "merveille" or ressources_generees.count("merveille") > 2:
-                val_max_ressources[12] = 0
-            elif val[0] == "cite_libre" or ressources_generees.count("cite_libre") > 2:
-                val_max_ressources[13] = 0
-            elif val[0] == "vide":
-                val_max_ressources[14] += bonus_proximites_1
+            #elif val[0] == "vide":
+            #    val_max_ressources[12] += bonus_proximites_1
                 
             for val2 in ressources_proximite_2:
                 if val2[0] == "baleine":
-                    val_max_ressources[0] += bonus_proximites_2
+                    if ressources_generees.count("baleine") > 2:
+                        val_max_ressources[0] = 0
+                    else:
+                        val_max_ressources[0] += 0
                 elif val2[0] == "betail":
-                    val_max_ressources[1] += bonus_proximites_2
+                    if ressources_generees.count("betail") > 2:
+                        val_max_ressources[1] = 0
+                    else:
+                        val_max_ressources[1] += bonus_proximites_2
                 elif val2[0] == "charbon":
-                    val_max_ressources[2] += bonus_proximites_2
-                elif val2[0] == "chevaux":
-                    val_max_ressources[3] += bonus_proximites_2
+                    if ressources_generees.count("charbon") > 2:
+                        val_max_ressources[2] = 0
+                    else:
+                        val_max_ressources[2] += bonus_proximites_2
                 elif val2[0] == "crabe":
-                    val_max_ressources[4] += bonus_proximites_2
+                    if ressources_generees.count("crabe") > 2:
+                        val_max_ressources[3] = 0
+                    else:
+                        val_max_ressources[3] += bonus_proximites_2
                 elif val2[0] == "fer":
-                    val_max_ressources[5] += bonus_proximites_2
-                elif val2[0] == "gemme":
-                    val_max_ressources[6] += bonus_proximites_2
+                    if ressources_generees.count("fer") > 2:
+                        val_max_ressources[4] = 0
+                    else:
+                        val_max_ressources[4] += bonus_proximites_2
                 elif val2[0] == "geyser":
-                    val_max_ressources[7] += bonus_proximites_2
+                    if ressources_generees.count("geyser") > 2:
+                        val_max_ressources[5] = 0
+                    else:
+                        val_max_ressources[5] += bonus_proximites_2
                 elif val2[0] == "or":
-                    val_max_ressources[8] += bonus_proximites_2
+                    if ressources_generees.count("or") > 2:
+                        val_max_ressources[6] = 0
+                    else:
+                        val_max_ressources[6] += bonus_proximites_2
                 elif val2[0] == "ruines" or ressources_generees.count("ruines") > 2:
-                    val_max_ressources[9] += 0
+                    val_max_ressources[7] += 0
                 elif val2[0] == "soie":
-                    val_max_ressources[10] += bonus_proximites_2
+                    if ressources_generees.count("soie") > 2:
+                        val_max_ressources[8] = 0
+                    else:
+                        val_max_ressources[8] += bonus_proximites_2
                 elif val2[0] == "village" or ressources_generees.count("village") > 2:
+                    val_max_ressources[9] = 0
+                elif val2[0] == "merveille" or ressources_generees.count("merveille") > 1:
+                    val_max_ressources[10] = 0
+                elif val2[0] == "cite_libre" or ressources_generees.count("cite_libre") > 1:
                     val_max_ressources[11] = 0
-                elif val2[0] == "merveille" or ressources_generees.count("merveille") > 2:
-                    val_max_ressources[12] = 0
-                elif val2[0] == "cite_libre" or ressources_generees.count("cite_libre") > 2:
-                    val_max_ressources[13] = 0
-                elif val2[0] == "vide":
-                    val_max_ressources[14] += bonus_proximites_2
+                #elif val2[0] == "vide":
+                #    val_max_ressources[12] += bonus_proximites_2
                         
         # génération d'une ressource en fonction du type de case
         if type_case != 0:
             while ressources == "":
-                val_ressource = random.randint(0, 1400)
+                val_ressource = random.randint(0, 1200)
                 
                 if val_ressource > 0 and val_ressource <= val_max_ressources[0] :
-                    if type_case in [6]:
+                    if type_case in [0,6]:
                         ressources = liste_ressources[0]
                         couleur = "olivedrab"
                         forme = "cercle"
                 elif val_ressource > 100 and val_ressource <= val_max_ressources[1] :
-                    if type_case in [1]:
+                    if type_case in [0,1]:
                         ressources = liste_ressources[1]
                         couleur = "yellowgreen"
                         forme = "cercle"
                 elif val_ressource > 200 and val_ressource <= val_max_ressources[2] :
-                    if type_case in [1,3,4]:
+                    if type_case in [0,3,4]:
                         ressources = liste_ressources[2]
                         couleur = "black"
                         forme = "carre"
                 elif val_ressource > 300 and val_ressource <= val_max_ressources[3]:
-                    if type_case in [1]:
-                        #ressources = liste_ressources[3]
-                        #couleur = "saddlebrown"
-                        #forme = "cercle"
-                        ### remplacer par betail => 
-                        ressources = liste_ressources[1]
-                        couleur = "yellowgreen"
-                        forme = "cercle"
-                elif val_ressource > 400 and val_ressource <= val_max_ressources[4]:
-                    if type_case in [6]:
-                        ressources = liste_ressources[4]
+                    if type_case in [0,6]:
+                        ressources = liste_ressources[3]
                         couleur = "aquamarine"
                         forme = "cercle"
+                elif val_ressource > 400 and val_ressource <= val_max_ressources[4]:
+                    if type_case in [0,3,4]:
+                        ressources = liste_ressources[4]
+                        couleur = "red"
+                        forme = "carre"
                 elif val_ressource > 500 and val_ressource <= val_max_ressources[5]:
-                    if type_case in [1,3,4]:
+                    if type_case in [0,3]:
                         ressources = liste_ressources[5]
                         couleur = "red"
-                        forme = "carre"
-                elif val_ressource > 600 and val_ressource <= val_max_ressources[6]:
-                    if type_case in [3,4]:
-                        ressources = liste_ressources[6]
-                        couleur = "royalblue"
-                        forme = "carre"
-                elif val_ressource > 700 and val_ressource <= val_max_ressources[7]:
-                    if type_case in [3]:
-                        ressources = liste_ressources[7]
-                        couleur = "red"
                         forme = "cercle"
-                elif val_ressource > 800 and val_ressource <= val_max_ressources[8]:
-                    if type_case in [1,3,4]:
-                        ressources = liste_ressources[8]
+                elif val_ressource > 600 and val_ressource <= val_max_ressources[6]:
+                    if type_case in [0,3,4]:
+                        ressources = liste_ressources[6]
                         couleur = "gold"
                         forme = "carre"
-                elif val_ressource > 900 and val_ressource <= val_max_ressources[9]:
-                    if type_case in [1,2,5,6]:
-                        ressources = liste_ressources[9]
+                elif val_ressource > 700 and val_ressource <= val_max_ressources[7]:
+                    if type_case in [1,2,3,5,6]:
+                        ressources = liste_ressources[7]
                         couleur = "black"
                         forme = "etoile"
-                elif val_ressource > 1000 and val_ressource <= val_max_ressources[10]:
-                    if type_case in [2]:
-                        ressources = liste_ressources[10]
+                elif val_ressource > 800 and val_ressource <= val_max_ressources[8]:
+                    if type_case in [0,2]:
+                        ressources = liste_ressources[8]
                         couleur = "violet"
                         forme = "cercle"
+                elif val_ressource > 900 and val_ressource <= val_max_ressources[9]:
+                    if type_case in [1,2,3,5]:
+                        ressources = liste_ressources[9]
+                        couleur = "red"
+                        forme = "etoile"
+                elif val_ressource > 1000 and val_ressource <= val_max_ressources[10]:
+                    if type_case in [1,2,3,4,6]:
+                        ressources = liste_ressources[10]
+                        couleur = "gold"
+                        forme = "etoile"
                 elif val_ressource > 1100 and val_ressource <= val_max_ressources[11]:
                     if type_case in [1,2,3,5]:
                         ressources = liste_ressources[11]
-                        couleur = "red"
-                        forme = "etoile"
-                elif val_ressource > 1200 and val_ressource <= val_max_ressources[12]:
-                    if type_case in [1,2,3,4,5,6]:
-                        ressources = liste_ressources[12]
-                        couleur = "gold"
-                        forme = "etoile"
-                elif val_ressource > 1300 and val_ressource <= val_max_ressources[13]:
-                    if type_case in [1,2,3,5]:
-                        ressources = liste_ressources[13]
                         couleur = "snow"
                         forme = "etoile"
                 else:
-                    ressources = liste_ressources[14]
+                    ressources = liste_ressources[12]
+
             if ressources != "vide":    
                 ressources_generees.append([ressources,idx,idy])
         

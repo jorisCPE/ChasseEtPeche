@@ -52,8 +52,8 @@ def affichage_tuile(tuile_test,nb_lignes,nb_colonnes):
         print(ressources_proximite)
         
         #gestion du bonus de proximité
-        bonus_proximites=30
-        val_max_ressources = [8,119,216,316,419,516,609,712,819,910,1014,1119,1210,1310]
+        bonus_proximites=50
+        val_max_ressources = [30,150,250,350,450,540,640,750,850,950,1050,1150,1250,1350]
         
         for val in ressources_proximite:
             if val[0] == "baleine":

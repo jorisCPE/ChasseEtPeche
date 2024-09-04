@@ -1,11 +1,14 @@
 Recapitulatif des ressources :
-7 or
+18 betail
+9 ruines
+8 geyser
+7 charbon
+7 soie
+7 crabe
+6 cite_libre
+6 fer
+5 village
 5 merveille
-4 ruines
-4 charbon
-3 village
-3 betail
-2 cite_libre
-2 gemme
-1 soie
-Il y a 31 ressources sur la carte 
+4 baleine
+4 or
+Il y a 86 ressources sur la carte 
