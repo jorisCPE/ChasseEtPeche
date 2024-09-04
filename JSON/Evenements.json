@@ -1,0 +1,104 @@
+{
+    "events_ete": [
+        {
+            "nom": "Sécheresse",
+            "nombre d'occurences": 5,
+            "description": "Jetez 1d8 pour déterminer l'ampleur de la catastrophe: 1 - 4 : tous les joueurs perdent 10 Nourriture. Sur un résultat de 5 - 7 : ils perdent 20 Nourriture et sur un résultat de 8 ils perdent 30 Nourriture",
+            "ampleur_low_1": 1,
+            "ampleur_high_1": 4,
+            "ampleur_description_1": "Tous les joueurs perdent 10 Nourriture",
+            "ampleur_low_2": 5,
+            "ampleur_high_2": 7,
+            "ampleur_description_2": "Tous les joueurs perdent 20 Nourriture",
+            "ampleur_low_3": 8,
+            "ampleur_high_3": 999,
+            "ampleur_description_3": "Tous les joueurs perdent 30 Nourriture"
+        },
+        {
+            "nom": "Explosion volcanique",
+            "nombre d'occurences": 10,
+            "description": "Jetez un dé pour chaque volcan pour déterminer l'ampleur de la catastrophe, sur 6+ il explose, détruisant tous les aménagements adjacents et rendant les cases adjacentes infranchissables et inconstructibles pour cette saison. Chaque unité à 1 case ou moins jette 1d8, sur 1+ elle perd 1Bl, sur 4+ elle perd 2Bl, sur 7+ elle perd 4Bl, sur 8+ elle meurt. Si une unité ne succombe pas elle récupère tous ses PV et est repoussée d'une case en diriction opposée au volcan. Tous les volcans produisent instantanément 5 Sciences",
+            "ampleur_low_1": 1,
+            "ampleur_high_1": 4,
+            "ampleur_description_1": "Tous les volcans produisent instantanément 5 Sciences",
+            "ampleur_low_2": 5,
+            "ampleur_high_2": 7,
+            "ampleur_description_2": "Tous les volcans produisent instantanément 10 Sciences, les volcans explosent et détruisent les aménagements adjacents et rendant les cases infrachissables pour le reste de la saison.",
+            "ampleur_low_3": 8,
+            "ampleur_high_3": 999,
+            "ampleur_description_3": "Tous les volcans produisent instantanément 15 Sciences, les volcans explosent et détruisent les aménagements adjacents et rendant les cases infrachissables pour le reste de la saison. Les unités à 1 case ou moins des volcans jettent 1d8, sur 1+ elles perdent 1Bl, sur 4+ elles perdent 2Bl, sur 7+ elles perdent 4Bl, sur 8+ elles meurent. Si une unité ne succombe pas elle récupère tous ses PV et est repoussée d'une case en direction opposée au volcan."
+        },
+        {
+            "nom": "Innondation",
+            "nombre d'occurences": 5,
+            "description": "Jetez 1d8 pour déterminer l'ampleur de la catastrophe : 1 - 4 : tous les marais sont détruits, immobilisant les potentielles armées s'y trouvant pour la saison et détruisant les aménagements. 5 - 7 : les plaines adjascentes à des rivières, des lacs, ou la mer sont également touchées par la catastrophe. 8 : les forêts adjascentes à des rivières, des lacs ou la mer sont également touchées par la catastrophe.",
+            "ampleur_low_1": 1,
+            "ampleur_high_1": 4,
+            "ampleur_description_1": "Tous les marais sont innondés, immobilisant les potentielles armées s'y trouvant pour la saison et détruisant les aménagements.",
+            "ampleur_low_2": 5,
+            "ampleur_high_2": 7,
+            "ampleur_description_2": "Les plaines, désert et marais adjascent à des rivières, des lacs ou la mer sont innondés, immobilisant les potentielles armées s'y trouvant pour la saison et détruisant les aménagements.",
+            "ampleur_low_3": 8,
+            "ampleur_high_3": 999,
+            "ampleur_description_3": "Les plaines, désert, forêts et marais adjascent à des rivières, des lacs ou la mer sont innondés, immobilisant les potentielles armées s'y trouvant pour la saison et détruisant les aménagements."
+        },
+        {
+            "nom": "Incroyance",
+            "nombre d'occurences": 5,
+            "description": "Jetez 1d8 pour chaque habitation déterminer l'ampleur de la catastrophe : sur 7+ l'habitation change de culture pour en adopter une aléatoire.",
+            "ampleur_low_1": 1,
+            "ampleur_high_1": 4,
+            "ampleur_description_1": "Jetez un dé par habitation, sur 8+ l'habitation change de culture pour en adopter une aléatoire.",
+            "ampleur_low_2": 5,
+            "ampleur_high_2": 7,
+            "ampleur_description_2": "Jetez un dé par habitation, sur 7+ l'habitation change de culture pour en adopter une aléatoire.",
+            "ampleur_low_3": 8,
+            "ampleur_high_3": 999,
+            "ampleur_description_3": "Jetez un dé par habitation, sur 6+ l'habitation change de culture pour en adopter une aléatoire."
+        },
+        {
+            "nom": "Bringandage",
+            "nombre d'occurences": 5,
+            "description": "Jetez 1d8 pour déterminer l'ampleur de la catastrophe : sur 1 - 4 : tous les joueurs perdent 8 Or par rang de leur royaume. Sur 5 - 7 : ils perdent 12 Or par rang de leur royaume. Sur 8 : ils perdent 20 Or par rang de leur royaume.",
+            "ampleur_low_1": 1,
+            "ampleur_high_1": 4,
+            "ampleur_description_1": "Tous les joueurs perdent 8 Or par rang de leur royaume. S'il n'ont plus d'Or, ils perdent à la place de la nourriture.",
+            "ampleur_low_2": 5,
+            "ampleur_high_2": 7,
+            "ampleur_description_2": "Tous les joueurs perdent 12 Or par rang de leur royaume. S'il n'ont plus d'Or, ils perdent à la place de la nourriture.",
+            "ampleur_low_3": 8,
+            "ampleur_high_3": 999,
+            "ampleur_description_3": "Tous les joueurs perdent 20 Or par rang de leur royaume. S'il n'ont plus d'Or, ils perdent à la place de la nourriture."
+        },
+        {
+            "nom": "Incendie",
+            "nombre d'occurences": 5,
+            "description": "Jetez 1d8 pour déterminer l'ampleur de la catastrophe : sur 1 - 4 : une case aléatoire se transforme en désert, détruisant les ressources de Bétail, Crabe, Soie, Dauphins et les potentiels aménagements. Sur 5 - 7 : deux cases aléatoires se transforment en désert, détruisant les ressources de Bétail, Crabe, Soie, Dauphins et les potentiels aménagements. Sur 8 : trois cases aléatoires se transforment en désert, détruisant les ressources de Bétail, Crabe, Soie, Dauphins et les potentiels aménagements.",
+            "ampleur_low_1": 1,
+            "ampleur_high_1": 4,
+            "ampleur_description_1": "Une case aléatoire se transforme en désert, détruisant les ressources de Bétail, Crabe, Soie, Dauphins et les potentiels aménagements.",
+            "ampleur_low_2": 5,
+            "ampleur_high_2": 7,
+            "ampleur_description_2": "Deux cases aléatoires se transforment en désert, détruisant les ressources de Bétail, Crabe, Soie, Dauphins et les potentiels aménagements.",
+            "ampleur_low_3": 8,
+            "ampleur_high_3": 999,
+            "ampleur_description_3": "Trois cases aléatoires se transforment en désert, détruisant les ressources de Bétail, Crabe, Soie, Dauphins et les potentiels aménagements."
+        },
+        {
+            "nom": "Radiations solaires",
+            "nombre d'occurences": 5,
+            "description": "si au moins 5 cases ont été transformées en désert via l’évènement Incendie, 8 cases supplémentaires se voient devenir des déserts, sinon, seulement 3 cases se transforment en déserts comptant comme l’évènement incendie. Les déserts ainsi créés détruisent les ressources de Bétail, Crabe, Soie, Dauphins et les potentiels aménagements.",
+            "ampleur_low_1": 1,
+            "ampleur_high_1": 4,
+            "ampleur_description_1": "Si au moins 5 cases ont été transformées en désert via l’évènement Incendie, 3 cases se voient devenir des déserts comptant comme l’évènement incendie. Les déserts ainsi créés détruisent les ressources de Bétail, Crabe, Soie, Dauphins et les potentiels aménagements.",
+            "ampleur_low_2": 5,
+            "ampleur_high_2": 7,
+            "ampleur_description_2": "Si au moins 5 cases ont été transformées en désert via l’évènement Incendie, 8 cases se voient devenir des déserts comptant comme l’évènement incendie. Les déserts ainsi créés détruisent les ressources de Bétail, Crabe, Soie, Dauphins et les potentiels aménagements.",
+            "ampleur_low_3": 8,
+            "ampleur_high_3": 999
+        },
+        {
+            "n": null
+        }
+    ]
+}
