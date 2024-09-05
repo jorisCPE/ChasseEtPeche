@@ -1,6 +1,6 @@
 import tkinter as tk
-import random
 from generer_carte import generer_carte
+from generation_evenement import tirer_evenement
 
 def afficher_carte():
     nom,ressources = generer_carte()
@@ -27,12 +27,6 @@ def afficher_carte():
     dessiner_hexagone(canvas, 50 +  hexagone_size * 4.5, 50 + offset_y , hexagone_size, nom[11])
     dessiner_hexagone(canvas, 50 +  hexagone_size * 4.5, 50 + 2 * offset_y , hexagone_size, nom[10])
         
-    
-    
-
-def generer_nombre_aleatoire():
-    nombre_aleatoire = random.randint(0, 100)
-    label_nombre.config(text=f"Évènement : {nombre_aleatoire}")
 
 def dessiner_hexagone(canvas, x, y, size, text):
     # Calculer les coordonnées des sommets de l'hexagone
@@ -73,13 +67,17 @@ button = tk.Button(root, text="Génération de map", command=afficher_carte)
 button.pack(anchor="nw", padx=10, pady=10)  # Affiche le bouton en haut à gauche
 
 # Création d'un Canvas pour dessiner les hexagones
-canvas = tk.Canvas(root, width=500, height=500, bg="white")
+canvas = tk.Canvas(root, width=400, height=400, bg="white")
 canvas.pack(anchor="ne", padx=20, pady=20)
 
 
 
 # Ajout d'un bouton pour générer un nombre aléatoire
-button_generer = tk.Button(root, text="Générer un nombre aléatoire", command=generer_nombre_aleatoire)
+button_generer = tk.Button(root, text="Event ete", command=tirer_evenement("events_ete", 2))
+button_generer.pack(anchor="sw", padx=10, pady=10)  # Ajoute de la marge autour du bouton
+
+# Ajout d'un bouton pour générer un nombre aléatoire
+button_generer = tk.Button(root, text="Event hivers", command=tirer_evenement("events_hiver", 1))
 button_generer.pack(anchor="sw", padx=10, pady=10)  # Ajoute de la marge autour du bouton
 
 # Étiquette pour afficher le nombre généré

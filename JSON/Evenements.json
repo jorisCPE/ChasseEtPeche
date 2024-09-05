@@ -2,7 +2,7 @@
     "events_ete": [
         {
             "nom": "Sécheresse",
-            "nombre d'occurences": 5,
+            "nombre_occurences": 5,
             "ampleur_low_1": 1,
             "ampleur_high_1": 4,
             "ampleur_description_1": "Tous les joueurs perdent 10 Nourriture",
@@ -15,7 +15,7 @@
         },
         {
             "nom": "Explosion volcanique",
-            "nombre d'occurences": 10,
+            "nombre_occurences": 10,
             "ampleur_low_1": 1,
             "ampleur_high_1": 4,
             "ampleur_description_1": "Tous les volcans produisent instantanément 5 Sciences",
@@ -28,7 +28,7 @@
         },
         {
             "nom": "Innondation",
-            "nombre d'occurences": 5,
+            "nombre_occurences": 5,
             "ampleur_low_1": 1,
             "ampleur_high_1": 4,
             "ampleur_description_1": "Tous les marais sont innondés, immobilisant les potentielles armées s'y trouvant pour la saison et détruisant les aménagements.",
@@ -41,7 +41,7 @@
         },
         {
             "nom": "Incroyance",
-            "nombre d'occurences": 5,
+            "nombre_occurences": 5,
             "ampleur_low_1": 1,
             "ampleur_high_1": 4,
             "ampleur_description_1": "Jetez un dé par habitation, sur 8+ l'habitation change de culture pour en adopter une aléatoire.",
@@ -54,7 +54,7 @@
         },
         {
             "nom": "Bringandage",
-            "nombre d'occurences": 5,
+            "nombre_occurences": 5,
             "ampleur_low_1": 1,
             "ampleur_high_1": 4,
             "ampleur_description_1": "Tous les joueurs perdent 8 Or par rang de leur royaume. S'il n'ont plus d'Or, ils perdent à la place de la nourriture.",
@@ -67,7 +67,7 @@
         },
         {
             "nom": "Incendie",
-            "nombre d'occurences": 5,
+            "nombre_occurences": 5,
             "ampleur_low_1": 1,
             "ampleur_high_1": 4,
             "ampleur_description_1": "Une case aléatoire se transforme en désert, détruisant les ressources de Bétail, Crabe, Soie, Dauphins et les potentiels aménagements.",
@@ -80,7 +80,7 @@
         },
         {
             "nom": "Radiations solaires",
-            "nombre d'occurences": 5,
+            "nombre_occurences": 5,
             "ampleur_low_1": 1,
             "ampleur_high_1": 4,
             "ampleur_description_1": "Si au moins 5 cases ont été transformées en désert via l’évènement Incendie, 3 cases se voient devenir des déserts comptant comme l’évènement incendie. Les déserts ainsi créés détruisent les ressources de Bétail, Crabe, Soie, Dauphins et les potentiels aménagements.",
@@ -97,7 +97,7 @@
     "events_hiver": [
         {
             "nom": "Famine",
-            "nombre d'occurences": 5,
+            "nombre_occurences": 5,
             "ampleur_low_1": 1,
             "ampleur_high_1": 4,
             "ampleur_description_1": "Tous les joueurs perdent 5 Nourriture et 2 Or par rang de leurs royaumes",
@@ -110,7 +110,7 @@
         },
         {
             "nom": "Avalanche",
-            "nombre d'occurences": 10,
+            "nombre_occurences": 10,
             "ampleur_low_1": 1,
             "ampleur_high_1": 4,
             "ampleur_description_1": "Jetez un dé pour chaque montage, sur 8+ l'avalanche détruit les aménagements sur la case et les cases adjascentes.",
@@ -123,17 +123,40 @@
         },
         {
             "nom": "Blizzard",
-            "nombre d'occurences": 5,
+            "nombre_occurences": 5,
             "ampleur_low_1": 1,
             "ampleur_high_1": 999,
-            "ampleur_description_1": "Toutes les armées voient leur mouvement réduit à 1 PM pour le reste de l'hiver.",
+            "ampleur_description_1": "Toutes les armées voient leur mouvement réduit à 1 PM pour le reste de l'hiver."
         },
         {
             "nom":"Mauvais présage",
-            "nombre d'occurences": 5,
+            "nombre_occurences": 5,
             "ampleur_low_1": 1,
             "ampleur_high_1": 999,
             "ampleur_description_1": "La dangerosité des évènements augment de 1 de manière permanente."
         },
+        {
+            "nom":"Ere glaciaire",
+            "nombre_occurences": 5,
+            "ampleur_low_1":1,
+            "ampleur_high_1":5,
+            "ampleur_description_1": "Toutes les rivières sont gelées et peuvent être traversées normalement par les armées terrestres. Les bâteaux sont immobilisés",
+            "ampleur_low_2":6,
+            "ampleur_high_2":999,
+            "ampleur_description_2": "Toutes les rivières, les lacs et les mers sont gelées et peuvent être traversées normalement par les armées terrestres. Les bâteaux sont immobilisés"
+        },
+        {
+            "nom": "Peste",
+            "nombre_occurences": 2,
+            "ampleur_low_1": 1,
+            "ampleur_high_1": 4,
+            "ampleur_description_1": "Jetez un dé par personnage, sur 8+ il contracte une maladie aléatoire.",
+            "ampleur_low_2": 5,
+            "ampleur_high_2": 7,
+            "ampleur_description_2": "Jetez un dé par personnage, sur 7+ il contracte une maladie aléatoire.",
+            "ampleur_low_3": 8,
+            "ampleur_high_3": 999,
+            "ampleur_description_3": "Jetez un dé par personnage, sur 6+ il contracte une maladie aléatoire."
+        }
     ]
 }
