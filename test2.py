@@ -1,6 +1,9 @@
 import tkinter as tk
+
 from generer_carte import generer_carte
 from generation_evenement import tirer_evenement
+
+#################################################################################################################
 
 def afficher_carte():
     nom, ressources = generer_carte()
@@ -51,39 +54,44 @@ def creer_recapitulatif(ressources):
             fichier.write(f"{ressource[1]} {ressource[0]}\n")
             nb_ressources += ressource[1] 
         fichier.write(f"Il y a {nb_ressources} ressources sur la carte \n")
+        
+        
+###################################################################################################################3
 
-# Création de la fenêtre principale
-root = tk.Tk()
-root.title("Chasse et Pêche")
-root.geometry("1000x800")  # Dimensions de la fenêtre
+root=tk.Tk()
+root.geometry("360x360")
 
-# Ajout d'une étiquette (texte)
-label = tk.Label(root, text="Chasse et Pêche", font=("Helvetica", 40))
-label.pack()  # Affiche l'étiquette dans la fenêtre
+frame=tk.Frame(root,bg='lightblue')
+frame.place(relx=0.2,rely=0.2,relheight=0.6,relwidth=0.6)
 
-# Ajout d'un bouton
-button = tk.Button(root, text="Génération de map", command=afficher_carte)
-button.pack(anchor="nw", padx=10, pady=10)  # Affiche le bouton en haut à gauche
+def page1():
+    # Ajout d'une étiquette (texte)
+    label = tk.Label(root, text="Chasse et Pêche", font=("Helvetica", 40))
+    label.pack()  # Affiche l'étiquette dans la fenêtre
+    
+    # Ajout d'un bouton
+    button = tk.Button(root, text="Génération de map", command=afficher_carte)
+    button.pack(anchor="nw", padx=10, pady=10)  # Affiche le bouton en haut à gauche
 
-# Création d'un Canvas pour dessiner les hexagones
-canvas = tk.Canvas(root, width=400, height=400, bg="white")
-canvas.pack(anchor="ne", padx=20, pady=20)
+    # Création d'un Canvas pour dessiner les hexagones
+    canvas = tk.Canvas(root, width=400, height=400, bg="white")
+    canvas.pack(anchor="ne", padx=20, pady=20)
 
-# Ajout d'une zone de texte pour entrer un nombre
-entry_nombre = tk.Entry(root)
-entry_nombre.pack(anchor="sw", padx=10, pady=10)
+def page2():
+    label=tk.Label(frame,text='this is the page2')
+    label.place(relx=0.3,rely=0.4)
 
-# Bouton pour tirer un événement d'été
-button_generer_ete = tk.Button(root, text="Event été", command=lambda: tirer_evenement("events_ete", int(entry_nombre.get())))
-button_generer_ete.pack(anchor="sw", padx=10, pady=10)
+def page3():
+    label=tk.Label(frame,text='this is the page3')
+    label.place(relx=0.3,rely=0.4)
 
-# Bouton pour tirer un événement d'hiver
-button_generer_hiver = tk.Button(root, text="Event hiver", command=lambda: tirer_evenement("events_hiver", int(entry_nombre.get())))
-button_generer_hiver.pack(anchor="sw", padx=10, pady=10)
+bt=tk.Button(root,text='page1',command=page1)
+bt.grid(column=0,row=0)
 
-# Étiquette pour afficher des informations
-label_nombre = tk.Label(root, text="", font=("Helvetica", 16))
-label_nombre.pack(anchor="sw", padx=10, pady=10)
+bt1=tk.Button(root,text='page2',command=page2)
+bt1.grid(row=0,column=1)
 
-# Lancement de la boucle principale
+bt2=tk.Button(root,text='page3',command=page3)
+bt2.grid(row=0,column=2)
+
 root.mainloop()

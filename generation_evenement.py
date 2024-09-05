@@ -27,7 +27,6 @@ def tirer_evenement(saison, amplitude_joueur):
     
     # Générer une amplitude aléatoire entre 1 et 8
     amplitude_aleatoire = random.randint(1, 8)
-    print(f"Amplitude générée aléatoirement: {amplitude_aleatoire}")
     
     # Demander au joueur de saisir un nombre entre 1 et 3
     try:
@@ -55,4 +54,3 @@ def tirer_evenement(saison, amplitude_joueur):
     print(f"\nÉvénement: {evenement['nom']}")
     print(f"Amplitude : {amplitude_finale}")
     print(f"Description: {description}")
-
