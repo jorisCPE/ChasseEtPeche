@@ -30,8 +30,8 @@ def tirer_evenement(saison, amplitude_joueur):
     
     # Demander au joueur de saisir un nombre entre 1 et 3
     try:
-        if amplitude_joueur < 1 or amplitude_joueur > 3:
-            print("Nombre invalide. Veuillez entrer un nombre entre 1 et 3.")
+        if amplitude_joueur < 0 or amplitude_joueur > 3:
+            print("Nombre invalide. Veuillez entrer un nombre entre 0 et 3.")
             return
     except ValueError:
         print("Entrée invalide. Veuillez entrer un nombre.")
