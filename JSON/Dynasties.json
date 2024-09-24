@@ -1,0 +1,124 @@
+{
+    "Dynasties": [
+        {
+            "nom": "Bénédiction de Samodiva",
+            "nombre_occurences": 1,
+            "description": "Vos champs, champs de blés, pâturages et rizières produisent tous instantanément 5 Nourritures."
+        },
+        {
+            "nom": "Brigandage",
+            "nombre_occurences": 1,
+            "description": "Vous perdez 4 Or par rang du royaume."
+        },
+        {
+            "nom": "Commanderie",
+            "nombre_occurences": 1,
+            "description": "Un ordre radicaliste se construit dans une de vos habitations, qui gagne +25 Garnison ainsi qu’un bonus de +2 à la résistance à la conversion culturelle."
+        },
+        {
+            "nom": "Crise politique",
+            "nombre_occurences": 1,
+            "description": "Voir Régime politique."
+        },
+        {
+            "nom": "Culture expressive",
+            "nombre_occurences": 1,
+            "description": "Effectuez immédiatement un jet de conversion culturelle sur la cité état la plus proche avec le personnage de votre choix."
+        },
+        {
+            "nom": "Découverte",
+            "nombre_occurences": 1,
+            "description": "Vous gagnez 2 Science par rang de votre royaume."
+        },
+        {
+            "nom": "Demande de titre",
+            "nombre_occurences": 1,
+            "description": "Un personnage de votre cours sans titre en demande un, si vous refusez il quitte votre cours pour celle du joueur le plus proche."
+        },
+        {
+            "nom": "Emigration",
+            "nombre_occurences": 1,
+            "description": "Un personnage aléatoire de votre cour la quitte en abandonnant ses potentiels titres pour rejoindre celle du joueur ayant le plus de Tourisme. Si vous êtes celui ayant le plus de Tourisme, vous obtenez la Dynastie Invité."
+        },
+        {
+            "nom": "Eminent invité",
+            "nombre_occurences": 1,
+            "description": "Un nouveau personnage avec des traits aléatoire rejoint votre cour. Il possède une éducation de rang 1 aléatoire et une culture aléatoire."
+        },
+        {
+            "nom": "Etrangers gobelins",
+            "nombre_occurences": 1,
+            "description": "Des étrangers gobelins arrivent aux frontières d’une de vos habitations aléatoires. Si vous les refusez, ils prendront les armes contre vous avec une armée de 4d20 pts par rang de votre royaume + 1d100 par citadelle que vous possédez +2d20 par rang de votre pays. Si vous les acceptez, l’habitation qu’ils rejoignent adopte une culture aléatoire mais vous recevez 50% de la valeur en pts de leur armée sous forme d’Or."
+        },
+        {
+            "nom": "Hommage au roi",
+            "nombre_occurences": 1,
+            "description": "Recevez 2 d’une ressource de base aléatoire par rang de votre royaume."
+        },
+        {
+            "nom": "Lassitude",
+            "nombre_occurences": 1,
+            "description": "Un personnage abandonne son titre et ne pourra plus en recevoir par la suite."
+        },
+        {
+            "nom": "Légitimation d’un bâtard",
+            "nombre_occurences": 1,
+            "description": "Vous obtenez la naissance d’un enfant, qui ne peut pas hériter des titres."
+        },
+        {
+            "nom": "Maladie",
+            "nombre_occurences": 1,
+            "description": "Jetez un dé pour chaque personnage à votre cours, sur 7+ il contracte une maladie aléatoire."
+        },
+        {
+            "nom": "Manifestation druidique",
+            "nombre_occurences": 1,
+            "description": "Vous devez retirer une case de l’enceinte de votre pays sous peine que vos scieries ne produisent plus de Bois tant que vous ne l’avez pas fait."
+        },
+        {
+            "nom": "Marchand ambulant",
+            "nombre_occurences": 1,
+            "description": "Vous pouvez échangez 5 ressources de base de votre choix contre 4 ressources de base de votre choix."
+        },
+        {
+            "nom": "Merveille architecturale",
+            "nombre_occurences": 1,
+            "description": "La beauté de vos villes augmente de 5 votre tourisme définitivement."
+        },
+        {
+            "nom": "Miracle",
+            "nombre_occurences": 1,
+            "description": "Guérit la stérilité ou n’importe quelle maladie d’un personnage du pays."
+        },
+        {
+            "nom": "Nain égaré",
+            "nombre_occurences": 1,
+            "description": "Jetez 3d8 +5, vous gagnez un nain (soldat ou guerrier) de votre choix de ce coût ou moins, (c’est un personnage, tirez ses traits aléatoirement)."
+        },
+        {
+            "nom": "Révolte",
+            "nombre_occurences": 1,
+            "description": "Vos villes d’une autre culture se révoltent (voir calamité). Si aucune n’est éligible vous obtenez l’effet Hommage au roi."
+        },
+        {
+            "nom": "Sombre nécromancie",
+            "nombre_occurences": 1,
+            "description": "Un nécromancien réveille les morts dans une de vos habitations aléatoires, augmentant de 30 par rang de l’habitation la valeur de l’armée de la prochaine attaque qu’elle subit (cumulable si plusieurs nécromanciens apparaissent dans la même habitation)."
+        },
+        {
+            "nom": "Trêve de dieu",
+            "nombre_occurences": 1,
+            "description": "Vous ne pouvez-vous faire attaquer ce tour-ci (ni vos villes, ni vos armées), mais vous pouvez attaquer."
+        },
+        {
+            "nom": "Troupe de troubadours",
+            "nombre_occurences": 1,
+            "description": "Des troubadours s’installent dans votre capitale, augmentant de 5 votre tourisme définitivement."
+        },
+        {
+            "nom": "Voisins vigilants",
+            "nombre_occurences": 1,
+            "description": "Si vous construisez une amélioration de fortification de bâtiment ce tour-ci, celle-ci ne coûte aucun Or."
+        }
+    ]
+}

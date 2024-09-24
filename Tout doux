@@ -1,13 +1,15 @@
-A faire :
+## A faire :
 
-- Générer une nouvelle carte quand le nombre de ressources est inférieur à 10
-- Faire un choix de 12 tuiles sur les 15 disponibles
+- Générer une nouvelle carte quand le nombre de ressources est inférieur à 4.
+- Faire un choix de 12 tuiles sur les 15.
+- Créer une fenètre pour tirer une dynastie aléatoire.
+- Créer une fenètre pour générer une naissance aléatoire.
 
-En cours :
+## En cours :
 
 - Application Tkinter regroupant plusieurs fonctionnalités
 
-Déjà fait :
+## Déjà fait :
 
 - Affichage graphique d'une tuile
 - Affichage graphique de la carte entière
