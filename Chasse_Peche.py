@@ -77,15 +77,17 @@ def page2():
     def tirer_evenement(saison, amplitude_joueur):
         try:
             # Charger le fichier JSON des événements
-            with open('JSON/Dynasties.json', 'r', encoding='utf-8') as file:
+            with open('JSON/Evenements.json', 'r', encoding='utf-8') as file:
                 data = json.load(file)
         except FileNotFoundError:
-            label_evenement.config(text="Fichier Dynasties.json introuvable.")
+            label_evenement.config(text="Fichier Evenements.json introuvable.")
             return None
 
         # Vérifier si la saison est valide
         if saison not in data:
             label_evenement.config(text="Saison invalide.")
+            print(saison)
+            print(data[saison])
             return None
 
         evenements = data[saison]
