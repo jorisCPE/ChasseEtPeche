@@ -1,0 +1,228 @@
+{
+    "Genre": [
+        {
+            "nom": "Masculin",
+            "nombre_occurences": 49,
+            "desciption": "sexe masculin"
+        },
+        {
+            "nom": "Féminin",
+            "nombre_occurences": 51,
+            "desciption": "sexe féminin"
+        }
+    ],
+    "Orientation sexuelle": [
+        {
+            "nom": "Hétérosexuel",
+            "nombre_occurences":83,
+            "desciption": "attirance pour le sexe opposé"
+        },
+        {
+            "nom": "Homosexuel",
+            "nombre_occurences": 7,
+            "desciption": "attirance pour le même sexe"
+        },
+        {
+            "nom": "Bisexuel",
+            "nombre_occurences": 7,
+            "desciption": "attirance pour les deux sexes"
+        },
+        {
+            "nom": "Asexuel",
+            "nombre_occurences": 3,
+            "desciption": "attirance pour aucun sexe"
+        }
+    ],
+    "Genetique" : [
+        {
+            "nom": "Albinos",
+            "nombre_occurences": 3,
+            "héréditaire": true,
+            "desciption": "Les unités ciblant ce personnage en mêlée souffrent d'un malus de -1 sur leurs jets d'attaque. Cependant, ce personnage peut posséder un titre de moins que ceux permis par son rang."
+        },
+        {
+            "nom": "Avare",
+            "nombre_occurences": 3,
+            "desciption": "vos revenus diminuent de 1 Or par rang de votre pays."
+        },
+        {
+            "nom": "Beau",
+            "nombre_occurences": 3,
+            "héréditaire": true,
+            "desciption": "Fécondité +1. Si le jet d'hérédité donne 7 ou plus, l'enfant obtient le trait Magnifique. Ne peut être cumulé avec Magnifique. Ce personnage bénéficie d'un bonus de +1 lorsqu'il tente de convertir un autre personnage à sa culture."
+        },
+        {
+            "nom": "Bégaiement",
+            "nombre_occurences": 3,
+            "desciption": "ce personnage ne peut octroyer Motivant ou Très Motivant."
+        },
+        {
+            "nom": "Béni",
+            "nombre_occurences": 3,
+            "desciption": "lorsque ce personnage meurt, jetez un dé, sur 4+ il survit mais perd ce trait."
+        },
+        {
+            "nom": "Charismatique",
+            "nombre_occurences": 3,
+            "desciption": "toutes les figurines à 3’’ ou moins de ce personnage, lui compris, bénéficient d'un bonus de +1 au moral."
+        },
+        {
+            "nom": "Consanguin",
+            "nombre_occurences": 3,
+            "héréditaire": true,
+            "desciption": "ce personnage perd 1 BL max. Ce trait peut être cumulé à l’infini."
+        },
+        {
+            "nom": "Cruel",
+            "nombre_occurences": 3,
+            "desciption": "lorsque ce personnage est au pouvoir et qu’une révolte éclate, jetez 1d8, sur 4+ la révolte à trop peur et prend fin, sinon doublez la valeur en point des révoltés. Cela fonctionne s’il est gouverneur et que sa ville se révolte."
+        },
+        {
+            "nom": "Efficace",
+            "nombre_occurences": 3,
+            "desciption": "si ce personnage est ministre, il génère +4 Or."
+        },
+        {
+            "nom": "Enfant Sauvage",
+            "nombre_occurences": 3,
+            "desciption": "ce personnage bénéficie toujours de sauvagerie (HL). Jetez 1d8, sur 7+ il tue un membre aléatoire de sa dynastie."
+        },
+        {
+            "nom": "Fertile",
+            "nombre_occurences": 3,
+            "desciption": "Fécondité +3."
+        },
+        {
+            "nom": "Fort",
+            "nombre_occurences": 3,
+            "desciption": "ce personnage bénéficie de +1d8 au combat"
+        },
+        {
+            "nom": "Géant",
+            "nombre_occurences": 3,
+            "desciption": "augmente la taille de ce personnage de +1."
+        },
+        {
+            "nom": "Génie",
+            "nombre_occurences": 3,
+            "desciption": "ce personnage nait avec l'éducation de rang 2 de votre choix."
+        },
+        {
+            "nom": "Impuissant",
+            "nombre_occurences": 3,
+            "desciption": "Fécondité -3."
+        },
+        {
+            "nom": "Intelligent",
+            "nombre_occurences": 3,
+            "desciption": "éduquer ce personnage requiert 5 Sciences de moins."
+        },
+        {
+            "nom": "Magnifique",
+            "nombre_occurences": 3,
+            "héréditaire": true,
+            "desciption": "Fécondité +2. Si le jet d'hérédité est un échec, l'enfant obtient le trait Beau. Ne peut être cumulé avec Beau. Ce personnage bénéficie d'un bonus de +1 lorsqu'il tente de convertir un autre personnage à sa culture."
+        },
+        {
+            "nom": "Masochiste",
+            "nombre_occurences": 3,
+            "desciption": "si ce personnage est atteint d'une maladie ou blessé en bataille, gérerez 3 de la ressource de base de votre choix et 3 Sciences."
+        },
+        {
+            "nom": "Maudit",
+            "nombre_occurences": 3,
+            "héréditaire": true,
+            "desciption": "ce personnage obtient un bonus de 1d8 en mêlée, cependant, il contracte automatiquement les maladies et ne peut en être guéri."
+        },
+        {
+            "nom": "Nanisme",
+            "nombre_occurences": 3,
+            "héréditaire": true,
+            "desciption": "ce personnage ne peut monter à cheval et souffre d’un malus de -1 en Ta."
+        },
+        {
+            "nom": "Pacifique",
+            "nombre_occurences": 3,
+            "desciption": "ce personnage ne peut combattre. Quiconque exécute ce personnage déclenche une Révolte dans sa capitale."
+        },
+        {
+            "nom": "Paranoïaque",
+            "nombre_occurences": 3,
+            "desciption": "ce personnage génère une Protection par tour s'il est gouverneur ou dirigeant."
+        },
+        {
+            "nom": "Patriarche/Matriarche",
+            "nombre_occurences": 3,
+            "héréditaire": true,
+            "desciption": "lorsque ce personnage enfante, jetez un dé, sur 6+ l'enfant aura un trait génétique aléatoire supplémentaire. Vous pouvez relancer ce second trait si celui-ci ne vous convient pas mais devez accepter le nouveau résultat."
+        },
+        {
+            "nom": "Pied bot",
+            "nombre_occurences": 3,
+            "desciption": "ce personnage souffre d’un malus de -1 en Vit et -1d8 en combat."
+        },
+        {
+            "nom": "Prophète",
+            "nombre_occurences": 3,
+            "desciption": "quand ce personnage se trouve dans une cité d'une culture différente et qu'il tente de la convertir à sa culture, il le fait avec un bonus de +2. Ses enfants bénéficient ensuite de Sang Divin."
+        },
+        {
+            "nom": "Réincarnation",
+            "nombre_occurences": 3,
+            "desciption": "ce personnage est la réincarnation d'un de ses légendaires ancêtres. Choisissez l’ancêtre de votre choix, il conserve tous ses traits génétiques, son éducation et ses talents de stratège mais perds ses maladies (sauf touché par les dieux)."
+        },
+        {
+            "nom": "Sang Divin",
+            "nombre_occurences": 3,
+            "héréditaire": true,
+            "desciption": "quand ce personnage se trouve dans une cité d'une culture différente et qu'il tente de la convertir à sa culture, il le fait avec un bonus de +1."
+        },
+        {
+            "nom": "Sang pur",
+            "nombre_occurences": 3,
+            "héréditaire": true,
+            "desciption": "lorsque ce personnage enfante, jetez deux dés pour les traits génétiques et choisissez celui que vous gardez."
+        },
+        {
+            "nom": "Savant",
+            "nombre_occurences": 3,
+            "desciption": "les technologies coûtent 1 Science de moins à l'apprentissage si ce personnage est gouverneur ou dirigeant."
+        },
+        {
+            "nom": "Stérile",
+            "nombre_occurences": 3,
+            "desciption": "ce personnage ne peut enfanter."
+        },
+        {
+            "nom": "Stupide",
+            "nombre_occurences": 3,
+            "desciption": "ce personnage ne peut être éduqué et souffre d’un malus de -1 au moral."
+        },
+        {
+            "nom": "Terrifiant",
+            "nombre_occurences": 3,
+            "desciption": "TOUTES les figurines situées à 6’’ de ce personnage ou moins souffrent d’un malus de -1 au moral."
+        },
+        {
+            "nom": "Théologien",
+            "nombre_occurences": 3,
+            "desciption": "ce personnage génère 5 Cultures."
+        },
+        {
+            "nom": "Touché par les dieux",
+            "nombre_occurences": 3,
+            "héréditaire": true,
+            "desciption": "quand ce personnage enfante, jetez un dé, sur 6+ il obtient aléatoirement le trait : 1 – Intelligent ; 2 – Fertile ; 3 – Fort ; 4 – Charismatique."
+        },
+        {
+            "nom": "Vif",
+            "nombre_occurences": 3,
+            "desciption": "ce personnage bénéficie d’un bonus de +2 en Vit."
+        },
+        {
+            "nom": "Zélé",
+            "nombre_occurences": 3,
+            "desciption": "ce personnage obtient un bonus de +2 à la résistance à la conversion culturelle ainsi qu'un bonus de +2d8 lorsqu'il combat une armée d'une culture différente. De plus, il ne peut pas effectuer d’action de repli ni déroute et réussira automatiquement tous ses jets de moral."
+        }
+    ]
+}
