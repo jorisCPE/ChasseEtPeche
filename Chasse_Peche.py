@@ -86,6 +86,8 @@ def page2():
         # Vérifier si la saison est valide
         if saison not in data:
             label_evenement.config(text="Saison invalide.")
+            print(saison)
+            print(data[saison])
             return None
 
         evenements = data[saison]
@@ -123,6 +125,26 @@ def page2():
         )
         label_evenement.config(text=texte_evenement)
 
+    def tirer_dynastie():
+        try:
+            # Charger le fichier JSON des événements
+            with open('JSON/Dynasties.json', 'r', encoding='utf-8') as file:
+                data2 = json.load(file)
+        except FileNotFoundError:
+            label_dynastie.config(text="Fichier Dynasties.json introuvable.")
+            return None
+
+        # Choisir un événement aléatoire
+        dynastie = random.choice(data2['Dynasties'])
+        
+        
+        # Mettre à jour le texte du label avec les informations de l'événement
+        texte_dynastie = (
+            f"Dynastie: {dynastie['nom']}\n"
+            f"Description: {dynastie['description']}"
+        )
+        label_dynastie.config(text=texte_dynastie)
+    
     # Fonction pour obtenir la saisie utilisateur
     def get_user_input():
         try:
@@ -144,6 +166,14 @@ def page2():
     # Créer un label pour afficher les informations de l'événement
     label_evenement = tk.Label(frame, text="", font=("Helvetica", 15), justify="left", wraplength=400)
     label_evenement.pack(anchor="sw", padx=10, pady=10)
+    
+    # Bouton pour générer une dynastie
+    button_generer_dynastie = tk.Button(frame, text="Dynastie", command=tirer_dynastie)
+    button_generer_dynastie.pack(anchor="sw", padx=10, pady=10)
+    
+    # Créer un label pour afficher les informations de la dynastie
+    label_dynastie = tk.Label(frame, text="", font=("Helvetica", 15), justify="left", wraplength=400)
+    label_dynastie.pack(anchor="sw", padx=10, pady=10)
 
 
 
@@ -158,7 +188,7 @@ label.pack()
 bt = tk.Button(root, text='Carte', command=page1)
 bt.grid(column=0, row=0)
 
-bt1 = tk.Button(root, text='Evenements', command=page2)
+bt1 = tk.Button(root, text='Evenements et Dynasties', command=page2)
 bt1.grid(row=0, column=1)
 
 bt2 = tk.Button(root, text='Page 3', command=page3)
