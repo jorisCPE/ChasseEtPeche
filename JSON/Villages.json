@@ -42,7 +42,7 @@
             "description" : "Les villageois vous offrent 1 Personnage avec des traits aléatoires âgé de 3 ans."
         },
         {
-            "nom" : "union",
+            "nom" : "Union",
             "nombre_occurences": 1,
             "description" : "Le village rejoint votre pays en tant que nouveau Hameau."
         }
