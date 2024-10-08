@@ -1,0 +1,102 @@
+{
+    "Maladies": [
+        {
+            "nom": "Cécité",
+            "nombre_occurences": 1,
+            "sexuellement transmissible": false,
+            "héréditaire": false,
+            "description": "Votre personnage perd la vue et -2d8 au combat."
+        },
+        {
+            "nom": "Dépression",
+            "nombre_occurences": 1,
+            "sexuellement transmissible": false,
+            "héréditaire": false,
+            "description": "Votre personnage perd -2 Moral, Fécondité -2."
+        },
+        {
+            "nom": "Gangrène",
+            "nombre_occurences": 1,
+            "sexuellement transmissible": false,
+            "héréditaire": false,
+            "description": "A la fin de chaque saison jetez un dé, sur 6+ votre personnage contracte une nouvelle maladie aléatoire, Fécondité -2."
+        },
+        {
+            "nom": "Herpès",
+            "nombre_occurences": 1,
+            "sexuellement transmissible": true,
+            "héréditaire": false,
+            "description": "Ce personnage perd 1 PV max et -1 Vitesse."
+        },
+        {
+            "nom": "Lèpre",
+            "nombre_occurences": 1,
+            "sexuellement transmissible": false,
+            "héréditaire": false,
+            "description": "Votre personnage perd 2 PV max, Fécondité -2."
+        },
+        {
+            "nom": "Maladie de Cupidon",
+            "nombre_occurences": 1,
+            "sexuellement transmissible": true,
+            "héréditaire": false,
+            "description": "Chaque fois que ce personnage enfante, l'enfant reçoit une maladie aléatoire, Fécondité +1."
+        },
+        {
+            "nom": "Malformation",
+            "nombre_occurences": 1,
+            "sexuellement transmissible": false,
+            "héréditaire": true,
+            "description": "Votre personnage perd 1 PV max."
+        },
+        {
+            "nom": "Nécrose",
+            "nombre_occurences": 1,
+            "sexuellement transmissible": false,
+            "héréditaire": false,
+            "description": "Votre personnage perd une jambe et -2 Vitesse et -1d8 au combat, Fécondité -1."
+        },
+        {
+            "nom": "Schizophrénie",
+            "nombre_occurences": 1,
+            "sexuellement transmissible": false,
+            "héréditaire": false,
+            "description": "Votre personnage obtient la règle enfant sauvage, le jet pour le meurtre est de 6+ au lieu de 7+."
+        },
+        {
+            "nom": "Sénilité",
+            "nombre_occurences": 1,
+            "sexuellement transmissible": false,
+            "héréditaire": false,
+            "description": "Ce personnage perd 1 PV max, l'âge de ce personnage augmente de 2."
+        },
+        {
+            "nom": "Touché par les dieux",
+            "nombre_occurences": 1,
+            "sexuellement transmissible": false,
+            "héréditaire": true,
+            "description": "Votre personnage gagne 1 PV max."
+        },
+        {
+            "nom": "Trouble dissociatif de l'identité",
+            "nombre_occurences": 1,
+            "sexuellement transmissible": false,
+            "héréditaire": false,
+            "description": "Votre personnage change de trait génétique (il perd tous ses traits et en gagne un seul), de culture, de sexe et d'éducation."
+        },
+        {
+            "nom": "SIDA",
+            "nombre_occurences": 1,
+            "sexuellement transmissible": true,
+            "héréditaire": false,
+            "description": "Votre personnage perd 1 PV max."
+        },
+        {
+            "nom": "Zombification",
+            "nombre_occurences": 1,
+            "sexuellement transmissible": false,
+            "héréditaire": false,
+            "description": "Votre personnage devient un zombie, il perd tous ses traits, sa culture, son sexe et son éducation mais ne peut plus vieillir."
+        }
+    ]
+}

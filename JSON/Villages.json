@@ -1,0 +1,50 @@
+{
+    "Villages" : [
+        {
+            "Nom" : "Offrande",
+            "nombre_occurences": 12,
+            "description" : [
+                {
+                    "Nom" : "Bétail",
+                    "nombre_occurences": 1,
+                    "description" : "Les villageois vous offrent 5 Bétail."
+                },
+                {
+                    "Nom" : "Charbon",
+                    "nombre_occurences": 1,
+                    "description" : "Les villageois vous offrent 5 Charbon."
+                },
+                {
+                    "Nom" : "Fer",
+                    "nombre_occurences": 1,
+                    "description" : "Les villageois vous offrent 5 Fer."
+                },
+                {
+                    "Nom" : "Soie",
+                    "nombre_occurences": 1,
+                    "description" : "Les villageois vous offrent 5 Soie."
+                }
+            ]
+        },
+        {
+            "nom" : "Présent",
+            "nombre_occurences": 6,
+            "description" : "Les villageois vous offrent 12 Or."
+        },
+        {
+            "nom" : "Connaissance",
+            "nombre_occurences": 6,
+            "description" : "Les villageois vous offrent 3 Science."
+        },
+        {
+            "nom" : "Recrue",
+            "nombre_occurences": 4,
+            "description" : "Les villageois vous offrent 1 Personnage avec des traits aléatoires âgé de 3 ans."
+        },
+        {
+            "nom" : "union",
+            "nombre_occurences": 1,
+            "description" : "Le village rejoint votre pays en tant que nouveau Hameau."
+        }
+    ]
+}
