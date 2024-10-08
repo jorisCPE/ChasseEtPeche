@@ -179,8 +179,59 @@ def page2():
 
 def page3():
     clear_frame()
-    label = tk.Label(frame, text='This is page 3')
-    label.place(relx=0.3, rely=0.4)
+    
+    def tirer_Naissance():
+        try:
+            # Charger le fichier JSON des événements
+            with open('JSON/Naissances.json', 'r', encoding='utf-8') as file:
+                data = json.load(file)
+        except FileNotFoundError:
+            label_evenement.config(text="Fichier Evenements.json introuvable.")
+            return None
+
+        
+        # Choix du genre
+        genres = data['Genre']
+        genres_pondere = []
+        for genre in genres:
+            if 'nombre_occurences' in genre:
+                genres_pondere.extend([genre] * genre['nombre_occurences'])
+        genre = random.choice(genres_pondere)
+
+        # Choix de l'orientation sexuelle
+        orientation_sexuelle = data['Orientation sexuelle']
+        orientation_sexuelle_pondere = []
+        for orientation in orientation_sexuelle:
+            if 'nombre_occurences' in orientation:
+                orientation_sexuelle_pondere.extend([orientation] * orientation['nombre_occurences'])
+        orientation = random.choice(orientation_sexuelle_pondere)
+        
+        # choix du trait génétique
+        traits_genetiques = data['Genetique']
+        traits_genetiques_pondere = []
+        for trait in traits_genetiques:
+            if 'nombre_occurences' in trait:
+                traits_genetiques_pondere.extend([trait] * trait['nombre_occurences'])
+        trait = random.choice(traits_genetiques_pondere)
+    
+
+        
+        # Mettre à jour le texte du label avec les informations de l'événement
+        texte_evenement = (
+            f"Genre: {genre['nom']}\n"
+            f"Orientation Sexuelle : {orientation['nom']}\n"
+            f"Trait génétique: {trait['nom']}\n\n"
+            f"Description: {trait['description']}"
+        )
+        label_evenement.config(text=texte_evenement)
+        
+    # Bouton pour générer une Naissance
+    button_generer_Naissance = tk.Button(frame, text="Naissance", command=tirer_Naissance)
+    button_generer_Naissance.pack(anchor="sw", padx=10, pady=10)
+        
+    # Créer un label pour afficher les informations de la naissance
+    label_evenement = tk.Label(frame, text="", font=("Helvetica", 15), justify="left", wraplength=400)
+    label_evenement.pack(anchor="sw", padx=10, pady=10)
 
 label = tk.Label(frame, text="Chasse et Pêche", font=("Helvetica", 40))
 label.pack()
@@ -191,7 +242,7 @@ bt.grid(column=0, row=0)
 bt1 = tk.Button(root, text='Evenements et Dynasties', command=page2)
 bt1.grid(row=0, column=1)
 
-bt2 = tk.Button(root, text='Page 3', command=page3)
+bt2 = tk.Button(root, text='Naissance', command=page3)
 bt2.grid(row=0, column=2)
 
 root.mainloop()
