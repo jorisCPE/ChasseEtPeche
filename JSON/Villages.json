@@ -13,7 +13,7 @@
                     "Nom" : "Bois",
                     "nombre_occurences": 1,
                     "description" : "Les villageois vous offrent 5 Bois."
-                }
+                },
                 {
                     "Nom" : "Charbon",
                     "nombre_occurences": 1,
