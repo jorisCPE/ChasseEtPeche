@@ -119,6 +119,26 @@
             "nom": "Voisins vigilants",
             "nombre_occurences": 1,
             "description": "Si vous construisez une amélioration de fortification de bâtiment ce tour-ci, celle-ci ne coûte aucun Or."
+        },
+        {
+            "nom" : "tempête magique",
+            "nombre_occurences": 1,
+            "description": "Vous pouvez canaliser la tempête pour obtenir 2 Sciences par rang de votre royaume, ou l'utiliser pour octroyer 1 PM à vos armées pour le reste de la saison." 
+        },
+        {
+            "nom" : "Système de prévention",
+            "nombre_occurences": 1,
+            "description": "Vous pouvez dépenser 10 Or par rang de votre royaume pour protéger l'habitation de votre choix des effets de la prochaine calamité. Si vous ne le faites pas, gagnez 5 Or par rang de votre royaume."
+        },
+        {
+            "nom": "Sombre proposition",
+            "nombre_occurences": 1,
+            "description": "Des mages noirs vous proposent leurs services, si vous acceptez, recevez un espion (même si vous ne pouvez en posséder), si vous refusez, gagnez 2 Culture et 5 Or par rang de votre royaume."
+        },
+        {
+            "nom":"Découverte archéologique",
+            "nombre_occurences": 1,
+            "description": "vous pouvez dépenser 5 Science pour découvrir un ressource de Ruines Antiques sur une case de votre choix. Si vous ne le faites pas, gagnez 5 Sciences."
         }
     ]
 }
