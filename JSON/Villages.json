@@ -10,6 +10,11 @@
                     "description" : "Les villageois vous offrent 5 Bétail."
                 },
                 {
+                    "Nom" : "Bois",
+                    "nombre_occurences": 1,
+                    "description" : "Les villageois vous offrent 5 Bois."
+                }
+                {
                     "Nom" : "Charbon",
                     "nombre_occurences": 1,
                     "description" : "Les villageois vous offrent 5 Charbon."
@@ -18,6 +23,11 @@
                     "Nom" : "Fer",
                     "nombre_occurences": 1,
                     "description" : "Les villageois vous offrent 5 Fer."
+                },
+                {
+                    "Nom" : "Pierre",
+                    "nombre_occurences": 1,
+                    "description" : "Les villageois vous offrent 5 Pierre."
                 },
                 {
                     "Nom" : "Soie",
