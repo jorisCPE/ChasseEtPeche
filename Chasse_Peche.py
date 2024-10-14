@@ -73,6 +73,8 @@ def page1():
 
 def page2():
     clear_frame()
+    label = tk.Label(frame, text="Events et Dynasties", font=("Helvetica", 40))
+    label.pack()
 
     def tirer_evenement(saison, amplitude_joueur):
         try:
@@ -179,6 +181,8 @@ def page2():
 
 def page3():
     clear_frame()
+    label = tk.Label(frame, text="Naissances", font=("Helvetica", 40))
+    label.pack()
     
     def tirer_Naissance():
         try:
@@ -232,6 +236,88 @@ def page3():
     # Créer un label pour afficher les informations de la naissance
     label_evenement = tk.Label(frame, text="", font=("Helvetica", 15), justify="left", wraplength=400)
     label_evenement.pack(anchor="sw", padx=10, pady=10)
+    
+def page4():
+    clear_frame()
+    label = tk.Label(frame, text="Village", font=("Helvetica", 40))
+    label.pack()
+    
+    def tirer_village():
+        try:
+            # Charger le fichier JSON des événements
+            with open('JSON/Villages.json', 'r', encoding='utf-8') as file:
+                data3 = json.load(file)
+        except FileNotFoundError:
+            label_village.config(text="Fichier Dynasties.json introuvable.")
+            return None
+        
+        # Choisir un événement aléatoire
+        villages = data3['Villages']
+        events_pondere = []
+        for village in villages:
+            if 'nombre_occurences' in village:
+                events_pondere.extend([village] * village['nombre_occurences'])
+                
+        vill = random.choice(data3['Villages'])
+        
+        if vill['nom'] == 'Offrande':
+            village_offrande = random.choice(vill['description'])
+            # Mettre à jour le texte du label avec les informations de l'événement
+            texte_village = (
+                f"village: {vill['nom']}\n"
+                f"Description: {village_offrande['description']}\n"
+            )
+            label_village.config(text=texte_village)
+        else:
+            # Mettre à jour le texte du label avec les informations de l'événement
+            texte_village = (
+                f"village: {vill['nom']}\n"
+                f"Description: {vill['description']}"
+            )
+            label_village.config(text=texte_village)
+            
+    # Bouton pour générer un village
+    button_generer_village = tk.Button(frame, text="Village", command=tirer_village)
+    button_generer_village.pack(anchor="sw", padx=10, pady=10)
+    
+    # Créer un label pour afficher les informations du village
+    label_village = tk.Label(frame, text="", font=("Helvetica", 15), justify="left", wraplength=400)
+    label_village.pack(anchor="sw", padx=10, pady=10)
+    
+def page5():
+    clear_frame()
+    label = tk.Label(frame, text="Maladies", font=("Helvetica", 40))
+    label.pack()
+    
+    def tirer_maladie():
+        try:
+            # Charger le fichier JSON des événements
+            with open('JSON/Maladies.json', 'r', encoding='utf-8') as file:
+                data = json.load(file)
+        except FileNotFoundError:
+            label_maladie.config(text="Fichier Evenements.json introuvable.")
+            return None
+        
+        #choix de la maladie aléatoire
+        maladie = random.choice(data['Maladies'])
+        
+        # Mettre à jour le texte du label avec les informations de l'événement
+        texte_maladie = (
+            f"Maladie: {maladie['nom']}\n"
+            f"sexuellement transmissible : {maladie['sexuellement_transmissible']}\n"
+            f"héréditaire : {maladie['hereditaire']}\n\n"
+            f"Description: {maladie['description']}"
+        )
+        label_maladie.config(text=texte_maladie)
+    
+    #bouton pour générer une maladie
+    button_generer_maladie = tk.Button(frame, text="Maladie", command=tirer_maladie)
+    button_generer_maladie.pack(anchor="sw", padx=10, pady=10)
+    
+    # Créer un label pour afficher les informations de la maladie
+    label_maladie = tk.Label(frame, text="", font=("Helvetica", 15), justify="left", wraplength=400)
+    label_maladie.pack(anchor="sw", padx=10, pady=10)
+    
 
 label = tk.Label(frame, text="Chasse et Pêche", font=("Helvetica", 40))
 label.pack()
@@ -244,5 +330,11 @@ bt1.grid(row=0, column=1)
 
 bt2 = tk.Button(root, text='Naissance', command=page3)
 bt2.grid(row=0, column=2)
+
+bt3 = tk.Button(root, text='Villages', command=page4)
+bt3.grid(row=0, column=3)
+
+bt4 = tk.Button(root, text='Maladies', command=page5)
+bt4.grid(row=0, column=4)
 
 root.mainloop()

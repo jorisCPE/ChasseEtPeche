@@ -1,36 +1,36 @@
 {
     "Villages" : [
         {
-            "Nom" : "Offrande",
+            "nom" : "Offrande",
             "nombre_occurences": 12,
             "description" : [
                 {
-                    "Nom" : "Bétail",
+                    "nom" : "Bétail",
                     "nombre_occurences": 1,
                     "description" : "Les villageois vous offrent 5 Bétail."
                 },
                 {
-                    "Nom" : "Bois",
+                    "nom" : "Bois",
                     "nombre_occurences": 1,
                     "description" : "Les villageois vous offrent 5 Bois."
                 },
                 {
-                    "Nom" : "Charbon",
+                    "nom" : "Charbon",
                     "nombre_occurences": 1,
                     "description" : "Les villageois vous offrent 5 Charbon."
                 },
                 {
-                    "Nom" : "Fer",
+                    "nom" : "Fer",
                     "nombre_occurences": 1,
                     "description" : "Les villageois vous offrent 5 Fer."
                 },
                 {
-                    "Nom" : "Pierre",
+                    "nom" : "Pierre",
                     "nombre_occurences": 1,
                     "description" : "Les villageois vous offrent 5 Pierre."
                 },
                 {
-                    "Nom" : "Soie",
+                    "nom" : "Soie",
                     "nombre_occurences": 1,
                     "description" : "Les villageois vous offrent 5 Soie."
                 }
