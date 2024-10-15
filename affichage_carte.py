@@ -20,40 +20,6 @@ def affichage_carte(liste_tuile, save_path=None):
         ressources_triees_listes = [[res[0], res[1]] for res in ressources_triees]
         
         return ressources_triees_listes
-
-    
-    """
-    def case_proximite(tuile,idx,idy):
-        
-        # liste les cases a deux case de la case idx,idy
-        liste_rec_prox_2 = []
-        for val in ressources_generees:
-            if tuile[idy][idx] != 0:
-                # detection des cases adjacentes
-                if val[1] == idx-1 and val[2] == idy:
-                    liste_rec_prox_2.append([val[0],idx,idy])
-                if val[1] == idx and val[2] == idy-1:
-                    liste_rec_prox_2.append([val[0],idx,idy])
-                if val[1] == idx+1 and val[2] == idy-1 and idy % 2 == 1 or val[1] == idx-1 and val[2] == idy-1 and idy % 2 == 0:
-                    liste_rec_prox_2.append([val[0],idx,idy])
-                    
-                # detection des cases a 2 cases de distance
-                if val[1] == idx-2 and val[2] == idy:
-                    liste_rec_prox_2.append([val[0],idx,idy])
-                if val[1] == idx-2 and val[2] == idy-1 and idy % 2 == 0 or val[1] == idx-1 and val[2] == idy-1 and idy % 2 == 1:
-                    liste_rec_prox_2.append([val[0],idx,idy])
-                if val[1] == idx-1 and val[2] == idy-2: 
-                    liste_rec_prox_2.append([val[0],idx,idy])
-                if val[1] == idx and val[2] == idy-2:
-                    liste_rec_prox_2.append([val[0],idx,idy])
-                if val[1] == idx+1 and val[2] == idy-2:
-                    liste_rec_prox_2.append([val[0],idx,idy])
-                if val[1] == idx+1 and val[2] == idy-1 and idy % 2 == 0 or val[1] == idx+2 and val[2] == idy-1 and idy % 2 == 1:
-                    liste_rec_prox_2.append([val[0],idx,idy])
-        
-        
-        return liste_rec_prox
-    """
     
     def prox_1_case():
         liste_rec_prox_1 = []
@@ -108,6 +74,7 @@ def affichage_carte(liste_tuile, save_path=None):
         bonus_proximites_2=10
         val_max_ressources = [25,160,250,330,460,560,660,715,830,950,1020,1130]
         
+        #gestion des ressources en fonction des ressources proches et du nombre de ressources générées
         for val in ressources_proximite_1:
             if val[0] == "baleine":
                 if ressources_generees.count("baleine") > 2:
@@ -159,7 +126,8 @@ def affichage_carte(liste_tuile, save_path=None):
                 val_max_ressources[11] = 0
             #elif val[0] == "vide":
             #    val_max_ressources[12] += bonus_proximites_1
-                
+            
+            #gestion des ressources en fonction des ressources proches a 2 cases et du nombre de ressources générées
             for val2 in ressources_proximite_2:
                 if val2[0] == "baleine":
                     if ressources_generees.count("baleine") > 2:
