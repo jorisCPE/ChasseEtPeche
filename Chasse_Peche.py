@@ -1,5 +1,5 @@
 import tkinter as tk
-from generer_carte import generer_carte
+from generer_carte import generer_carte, generer_carte_14
 
 import random
 import json
@@ -20,6 +20,32 @@ def page1():
     
     def afficher_carte():
         nom, ressources = generer_carte()
+        
+        # Create recap file
+        creer_recapitulatif(ressources)
+        
+        hexagone_size = 50
+        offset_y = hexagone_size * (3 ** 0.5)  # Vertical distance between centers of hexagons
+
+        # Drawing hexagons on canvas
+        dessiner_hexagone(canvas, 50, 50 + 0.9 * hexagone_size, hexagone_size, nom[2])
+        dessiner_hexagone(canvas, 50, 50 + offset_y + 0.9 * hexagone_size, hexagone_size, nom[1])
+        dessiner_hexagone(canvas, 50, 50 + 2 * offset_y + 0.9 * hexagone_size, hexagone_size, nom[0])
+
+        dessiner_hexagone(canvas, 50 + hexagone_size * 1.5, 50, hexagone_size, nom[6])
+        dessiner_hexagone(canvas, 50 + hexagone_size * 1.5, 50 + offset_y, hexagone_size, nom[5])
+        dessiner_hexagone(canvas, 50 + hexagone_size * 1.5, 50 + 2 * offset_y, hexagone_size, nom[4])
+        dessiner_hexagone(canvas, 50 + hexagone_size * 1.5, 50 + 3 * offset_y, hexagone_size, nom[3])
+
+        dessiner_hexagone(canvas, 50 + hexagone_size * 3, 50 + 0.9 * hexagone_size, hexagone_size, nom[9])
+        dessiner_hexagone(canvas, 50 + hexagone_size * 3, 50 + offset_y + 0.9 * hexagone_size, hexagone_size, nom[8])
+        dessiner_hexagone(canvas, 50 + hexagone_size * 3, 50 + 2 * offset_y + 0.9 * hexagone_size, hexagone_size, nom[7])
+
+        dessiner_hexagone(canvas, 50 + hexagone_size * 4.5, 50 + offset_y, hexagone_size, nom[11])
+        dessiner_hexagone(canvas, 50 + hexagone_size * 4.5, 50 + 2 * offset_y, hexagone_size, nom[10])
+        
+    def afficher_carte_14():
+        nom, ressources = generer_carte_14()
         
         # Create recap file
         creer_recapitulatif(ressources)
@@ -65,8 +91,11 @@ def page1():
                 nb_ressources += ressource[1] 
             fichier.write(f"Il y a {nb_ressources} ressources sur la carte \n")
     
-    button = tk.Button(frame, text="Génération de map", command=afficher_carte)
+    button = tk.Button(frame, text="Génération de map 12 tuiles", command=afficher_carte)
     button.pack(anchor="nw", padx=10, pady=10)
+    
+    button2 = tk.Button(frame, text="Génération de map 14 tuiles", command=afficher_carte_14)
+    button2.pack(anchor="nw", padx=10, pady=10)
 
     canvas = tk.Canvas(frame, width=350, height=350, bg="white")  # Adjusted canvas size
     canvas.pack(anchor="ne", padx=20, pady=20)
