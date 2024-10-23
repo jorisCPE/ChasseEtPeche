@@ -295,9 +295,9 @@ def generer_carte():
     nb_lignes = 3
     nb_colonnes = 3
 
-    liste_ressources_tuile = affichage_carte(liste_tuile_melangee , 'carte')
+    liste_ressources_tuile = affichage_carte(liste_tuile_melangee_2 , 'carte')
     
-    return liste_nom_tuile_melangee, liste_ressources_tuile
+    return liste_nom_tuile_melangee_2, liste_ressources_tuile
 
     #affichage_tuile(tuile_1,nb_lignes,nb_colonnes)
 

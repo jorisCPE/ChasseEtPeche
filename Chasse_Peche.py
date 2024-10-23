@@ -4,11 +4,24 @@ from generer_carte import generer_carte, generer_carte_14
 import random
 import json
 
+
+def centrer_fenetre(fenetre):
+    fenetre.update_idletasks()
+    largeur_fenetre = fenetre.winfo_width()
+    hauteur_fenetre = fenetre.winfo_height()
+    largeur_ecran = fenetre.winfo_screenwidth()
+    hauteur_ecran = fenetre.winfo_screenheight()
+    x = (largeur_ecran // 2) - (largeur_fenetre // 2)
+    y = (hauteur_ecran // 2) - (hauteur_fenetre // 2)
+    fenetre.geometry(f'{largeur_fenetre}x{hauteur_fenetre}+{x}+{y}')
+
 root = tk.Tk()
-root.geometry("400x400")  # Adjusted window size for better fit
+root.geometry("800x800")  # Adjusted window size for better fit
+centrer_fenetre(root)
 
 frame = tk.Frame(root)
 frame.place(relx=0.1, rely=0.1, relheight=0.9, relwidth=0.9)
+
 
 def clear_frame():
     # Clears the content of the frame before loading a new page
@@ -45,6 +58,7 @@ def page1():
         dessiner_hexagone(canvas, 50 + hexagone_size * 4.5, 50 + 2 * offset_y, hexagone_size, nom[10])
         
     def afficher_carte_14():
+        print("generer carte 14 :")
         nom, ressources = generer_carte_14()
         
         # Create recap file
