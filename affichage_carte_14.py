@@ -293,7 +293,7 @@ def affichage_carte_14(liste_tuile, save_path=None):
                         x_coords = (x_hexagone + x_offset)+ 9.45 *idtx - 0.87*idty
                         y_coords = (y_hexagone + y_offset)+ math.sqrt(3)*6.2*idty - math.sqrt(3)*7/2 + math.sqrt(3)/1.7*idtx
                     elif idtx == 4:
-                        x_coords = (x_hexagone + x_offset)+ 9.5 *idtx - 0.87*idty
+                        x_coords = (x_hexagone + x_offset)+ 9.32 *idtx - 0.87*idty
                         y_coords = (y_hexagone + y_offset)+ math.sqrt(3)*6.2*idty + math.sqrt(3)/2.3*idtx
                     
                     
