@@ -1,0 +1,124 @@
+[
+  {
+    "ressource": "Baleine",
+    "couleur": "Bleu foncé",
+    "rendement": [
+      {
+        "rendement_ponctuel": [],
+        "rendement_ete": [
+          { "production": "Nourriture", "quantite": 15 },
+          { "production": "Or", "quantite": 2 }
+        ],
+        "rendement_hiver": [
+          { "production": "Nourriture", "quantite": 15 },
+          { "production": "Or", "quantite": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "ressource": "Bétail",
+    "couleur": "Vert",
+    "rendement": [
+      {
+        "rendement_ponctuel": [],
+        "rendement_ete": [
+          { "production": "Bétail", "quantite": 1 },
+          { "production": "Nourriture", "quantite": 8 }
+        ],
+        "rendement_hiver": [
+          { "production": "Bétail", "quantite": 1 },
+          { "production": "Nourriture", "quantite": 8 }
+        ]
+      }
+    ]
+  },
+  {
+    "ressource": "Charbon",
+    "couleur": "Noir",
+    "rendement": [
+      {
+        "rendement_ponctuel": [],
+        "rendement_ete": [
+          { "production": "Charbon", "quantite": 1 }
+        ],
+        "rendement_hiver": [
+          { "production": "Charbon", "quantite": 1 }
+        ]
+      }
+    ]
+  },
+  {
+    "ressource": "Crabe",
+    "couleur": "Bleu clair",
+    "rendement": [
+      {
+        "rendement_ponctuel": [],
+        "rendement_ete": [
+          { "production": "Nourriture", "quantite": 10 }
+        ],
+        "rendement_hiver": [
+          { "production": "Nourriture", "quantite": 10 }
+        ]
+      }
+    ]
+  },
+  {
+    "ressource": "Fer",
+    "couleur": "Rouge",
+    "rendement": [
+      {
+        "rendement_ponctuel": [],
+        "rendement_ete": [
+          { "production": "Fer", "quantite": 1 }
+        ],
+        "rendement_hiver": [
+          { "production": "Fer", "quantite": 1 }
+        ]
+      }
+    ]
+  },
+  {
+    "ressource": "Or",
+    "couleur": "Jaune",
+    "rendement": [
+      {
+        "rendement_ponctuel": [],
+        "rendement_ete": [
+          { "production": "Or", "quantite": 4 }
+        ],
+        "rendement_hiver": [
+          { "production": "Or", "quantite": 4 }
+        ]
+      }
+    ]
+  },
+  {
+    "ressource": "Ruines",
+    "couleur": "Gris",
+    "rendement": [
+      {
+        "rendement_ponctuel": [
+          { "production": "Tourisme", "quantite": 5 }
+        ],
+        "rendement_ete": [],
+        "rendement_hiver": []
+      }
+    ]
+  },
+  {
+    "ressource": "Soie",
+    "couleur": "Violet",
+    "rendement": [
+      {
+        "rendement_ponctuel": [],
+        "rendement_ete": [
+          { "production": "Soie", "quantite": 1 }
+        ],
+        "rendement_hiver": [
+          { "production": "Soie", "quantite": 1 }
+        ]
+      }
+    ]
+  }
+]
