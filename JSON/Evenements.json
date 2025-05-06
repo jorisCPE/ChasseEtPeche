@@ -175,13 +175,13 @@
             "nombre_occurences": 2,
             "ampleur_low_1": 1,
             "ampleur_high_1": 4,
-            "ampleur_description_1": "Jetez un dé par personnage, sur 8+ il contracte une maladie aléatoire.",
+            "ampleur_description_1": "Jetez un dé par habitation, sur 8+ sa population diminue de 10%.",
             "ampleur_low_2": 5,
             "ampleur_high_2": 7,
-            "ampleur_description_2": "Jetez un dé par personnage, sur 7+ il contracte une maladie aléatoire.",
+            "ampleur_description_2": "Jetez un dé par habitation, sur 7+ sa population diminue de 10%.",
             "ampleur_low_3": 8,
             "ampleur_high_3": 999,
-            "ampleur_description_3": "Jetez un dé par personnage, sur 6+ il contracte une maladie aléatoire."
+            "ampleur_description_3": "Jetez un dé par habitation, sur 6+ sa population diminue de 10%."
         },
         {
             "nom": "Gel",
