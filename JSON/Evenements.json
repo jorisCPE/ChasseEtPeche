@@ -54,7 +54,7 @@
         },
         {
             "nom": "Bringandage",
-            "nombre_occurences": 5,
+            "nombre_occurences": 8,
             "ampleur_low_1": 1,
             "ampleur_high_1": 4,
             "ampleur_description_1": "Tous les joueurs perdent 8 Or par rang de leur royaume. S'il n'ont plus d'Or, ils perdent à la place de la nourriture.",
@@ -80,7 +80,7 @@
         },
         {
             "nom": "Radiations solaires",
-            "nombre_occurences": 5,
+            "nombre_occurences": 3,
             "ampleur_low_1": 1,
             "ampleur_high_1": 4,
             "ampleur_description_1": "Si au moins 5 cases ont été transformées en désert via l’évènement Incendie, 3 cases se voient devenir des déserts comptant comme l’évènement incendie. Les déserts ainsi créés détruisent les ressources de Bétail, Crabe, Soie, Dauphins et les potentiels aménagements.",
@@ -92,8 +92,32 @@
             "ampleur_description_3": "Si au moins 5 cases ont été transformées en désert via l’évènement Incendie, 8 cases se voient devenir des déserts comptant comme l’évènement incendie. Les déserts ainsi créés détruisent les ressources de Bétail, Crabe, Soie, Dauphins et les potentiels aménagements."
         },
         {
-            "n": null
+            "nom": "Eclipse",
+            "nombre_occurences": 5,
+            "ampleur_low_1": 1,
+            "ampleur_high_1":4,
+            "ampleur_description_1": "Tous les joueur perdent 1 Science par rang de leurs royaumes.",
+            "ampleur_low_2": 5,
+            "ampleur_high_2":7,
+            "ampleur_description_2": "Tous les joueur perdent 3 Science par rang de leurs royaumes.",
+            "ampleur_low_3": 8,
+            "ampleur_high_3":999,
+            "ampleur_description_3": "Tous les joueur perdent 5 Science par rang de leurs royaumes."
+        },
+        {
+            "nom": "réchauffement climatique",
+            "nombre_occurences": 3,
+            "ampleur_low_1": 1,
+            "ampleur_high_1": 4,
+            "ampleur_description_1": "La dangerosité des évènements augmente de 1 de manière permanente.",
+            "ampleur_low_2": 5,
+            "ampleur_high_2": 7,
+            "ampleur_description_2": "La dangerosité des évènements augmente de 1 de manière permanente. Tous les joueurs perdent 5 Nourriture par rang de leurs royaumes.",
+            "ampleur_low_3": 8,
+            "ampleur_high_3": 999,
+            "ampleur_description_3": "La dangerosité des évènements augmente de 1 de manière permanente. Tous les joueurs perdent 10 Nourriture par rang de leurs royaumes."
         }
+
     ],
     "events_hiver": [
         {
@@ -151,13 +175,26 @@
             "nombre_occurences": 2,
             "ampleur_low_1": 1,
             "ampleur_high_1": 4,
-            "ampleur_description_1": "Jetez un dé par personnage, sur 8+ il contracte une maladie aléatoire.",
+            "ampleur_description_1": "Jetez un dé par habitation, sur 8+ sa population diminue de 10%.",
             "ampleur_low_2": 5,
             "ampleur_high_2": 7,
-            "ampleur_description_2": "Jetez un dé par personnage, sur 7+ il contracte une maladie aléatoire.",
+            "ampleur_description_2": "Jetez un dé par habitation, sur 7+ sa population diminue de 10%.",
             "ampleur_low_3": 8,
             "ampleur_high_3": 999,
-            "ampleur_description_3": "Jetez un dé par personnage, sur 6+ il contracte une maladie aléatoire."
+            "ampleur_description_3": "Jetez un dé par habitation, sur 6+ sa population diminue de 10%."
+        },
+        {
+            "nom": "Gel",
+            "nombre_occurences": 3,
+            "ampleur_low_1": 1,
+            "ampleur_high_1": 4,
+            "ampleur_description_1": "Tous les joueurs doivent retirer 1 case de l'enceinte de leur pays.",
+            "ampleur_low_2": 5,
+            "ampleur_high_2": 7,
+            "ampleur_description_2": "Tous les joueurs doivent retirer 2 cases de l'enceinte de leur pays.",
+            "ampleur_low_3": 8,
+            "ampleur_high_3": 999,
+            "ampleur_description_3": "Tous les joueurs doivent retirer 3 cases de l'enceinte de leur pays."
         }
     ]
 }

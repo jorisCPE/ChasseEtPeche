@@ -1,0 +1,110 @@
+Private Sub CommandButton1_Click()
+    Dim joueur As String
+    Dim ws As Worksheet
+    Dim randomPick As Double
+    Dim rngGenre As Range, rngOrientation As Range, rngGenetique As Range, rngCulture As Range, rngAge As Range, rngHeredite As Range, rngDescription As Range
+    Dim randomGenre As Range, randomOrientation As Range, randomGenetique As Range, randomCulture As Range, randomAge As Range
+    Dim totalGenre As Double, totalOrientation As Double, totalGenetique As Double, totalCulture As Double, totalAge As Double
+    Dim cumulativeProbGenre As Double, cumulativeProbOrientation As Double, cumulativeProbGenetique As Double, cumulativeProbCulture As Double, cumulativeProbAge As Double
+    Dim resultGenre As String, resultOrientation As String, resultGenetique As String, resultCulture As String, resultAge As String, resultHeredite As String, resultDescription As String
+    Dim i As Integer
+    
+    ' Récupérer le nom de la feuille active
+    joueur = ActiveSheet.Name
+    
+    ' Définir la feuille contenant les données
+    Set ws = ThisWorkbook.Sheets(joueur)
+    
+    ' Définir les plages de chaque tableau
+    Set rngGenre = ThisWorkbook.Sheets(joueur).Range("A2:A3")  ' Plage de Genre
+    Set rngOrientation = ThisWorkbook.Sheets(joueur).Range("A6:A9") ' Plage de Orientation sexuelle
+    Set rngCulture = ThisWorkbook.Sheets(joueur).Range("A12:A17") ' Plage de Culture
+    Set rngAge = ThisWorkbook.Sheets(joueur).Range("A20:A23") ' Plage d'Age
+    Set rngGenetique = ThisWorkbook.Sheets(joueur).Range("A29:A66") ' Plage de Trait génétique
+
+    ' Définir les plages de chaque tableau
+    Set rngGenre = ws.Range("A2:A3")  ' Plage de Genre
+    Set rngOrientation = ws.Range("A6:A9") ' Plage de Orientation sexuelle
+    Set rngCulture = ws.Range("A12:A17") ' Plage de Culture
+    Set rngAge = ws.Range("A20:A23") ' Plage d'Age
+    Set rngGenetique = ws.Range("A29:A66") ' Plage de Trait génétique
+
+
+    ' Calculer les total des occurrences pour chaque tableau
+    totalGenre = Application.WorksheetFunction.Sum(ws.Range("B2:B3"))  ' Somme des occurrences dans Genre
+    totalOrientation = Application.WorksheetFunction.Sum(ws.Range("B6:B9")) ' Somme des occurrences dans Orientation sexuelle
+    totalCulture = Application.WorksheetFunction.Sum(ws.Range("B12:B17")) ' Somme des occurrences dans Culture
+    totalAge = Application.WorksheetFunction.Sum(ws.Range("B20:B23")) ' Somme des occurrences dans Age
+    totalGenetique = Application.WorksheetFunction.Sum(ws.Range("B29:B66")) ' Somme des occurrences dans Trait génétique
+
+    ' Tirage aléatoire Genre
+    cumulativeProbGenre = 0
+    randomPick = Rnd() * totalGenre
+    For i = 2 To 3 ' Pour chaque ligne de la catégorie Genre
+        cumulativeProbGenre = cumulativeProbGenre + ws.Cells(i, 2).Value ' Ajouter Nombre d'occurrences
+        If cumulativeProbGenre >= randomPick Then
+            resultGenre = ws.Cells(i, 1).Value ' Nom du trait
+            Exit For
+        End If
+    Next i
+
+    ' Tirage aléatoire Orientation sexuelle
+    cumulativeProbOrientation = 0
+    randomPick = Rnd() * totalOrientation
+    For i = 6 To 9 ' Pour chaque ligne de la catégorie Orientation sexuelle
+        cumulativeProbOrientation = cumulativeProbOrientation + ws.Cells(i, 2).Value ' Ajouter Nombre d'occurrences
+        If cumulativeProbOrientation >= randomPick Then
+            resultOrientation = ws.Cells(i, 1).Value ' Nom du trait
+            Exit For
+        End If
+    Next i
+
+    ' Tirage aléatoire Culture
+    cumulativeProbCulture = 0
+    randomPick = Rnd() * totalCulture
+    For i = 12 To 17 ' Pour chaque ligne de la catégorie Culture
+        cumulativeProbCulture = cumulativeProbCulture + ws.Cells(i, 2).Value ' Ajouter Nombre d'occurrences
+        If cumulativeProbCulture >= randomPick Then
+            resultCulture = ws.Cells(i, 1).Value ' Nom du trait
+            Exit For
+        End If
+    Next i
+
+    ' Tirage aléatoire Age
+    cumulativeProbAge = 0
+    randomPick = Rnd() * totalAge
+    For i = 20 To 23 ' Pour chaque ligne de la catégorie Age
+        cumulativeProbAge = cumulativeProbAge + ws.Cells(i, 2).Value ' Ajouter Nombre d'occurrences
+        If cumulativeProbAge >= randomPick Then
+            resultAge = ws.Cells(i, 1).Value ' Nom du trait
+            Exit For
+        End If
+    Next i
+
+    ' Tirage aléatoire Trait génétique
+    cumulativeProbGenetique = 0
+    randomPick = Rnd() * totalGenetique
+    For i = 29 To 66 ' Pour chaque ligne de la catégorie Trait génétique
+        cumulativeProbGenetique = cumulativeProbGenetique + ws.Cells(i, 2).Value ' Ajouter Nombre d'occurrences
+        If cumulativeProbGenetique >= randomPick Then
+            resultGenetique = ws.Cells(i, 1).Value ' Nom du trait
+            resultHeredite = ws.Cells(i, 3).Value ' Héritabilité
+            resultDescription = ws.Cells(i, 5).Value ' Description du trait
+            Exit For
+        End If
+    Next i
+
+    
+    ' Afficher les résultats dans le UserForm
+    Me.Label1.Caption = "Genre : " & resultGenre
+    Me.Label2.Caption = "Orientation sexuelle : " & resultOrientation
+    Me.Label3.Caption = "Culture : " & resultCulture
+    Me.Label4.Caption = "Age : " & resultAge
+    Me.Label5.Caption = "Trait génétique : " & resultGenetique
+    Me.Label6.Caption = "Héréditaire ? " & resultHeredite
+    Me.Label7.Caption = "Description : " & resultDescription
+End Sub
+
+Private Sub UserForm_Click()
+
+End Sub

@@ -69,14 +69,13 @@ def affichage_carte_14(liste_tuile, save_path=None):
         ressources_proximite_2 = prox_2_cases()
         
         #gestion du bonus de proximité
-        bonus_proximites_1=40
-        bonus_proximites_2=10
-        val_max_ressources = [25,160,250,330,460,560,660,710,830,945,1015,1125]
+        bonus_proximites_1=30
+        bonus_proximites_2=20
+        val_max_ressources = [40,170,260,370,460,570,670,715,840,935,1018,1120]
         
         #gestion des ressources en fonction des ressources proches et du nombre de ressources générées
         for val in ressources_proximite_1:
             a = 2
-             
             if val == "baleine":
                 if ressources_proximite_1.count("baleine") > a:
                     val_max_ressources[0] = 0
